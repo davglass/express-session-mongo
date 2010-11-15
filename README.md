@@ -30,15 +30,15 @@ You can also pass several options to the constructor to tweak your session store
 * collection - The collection to save it's data to, defaults to: `sessions`
 * server - A custom mongo Server instance (this overides db, ip &amp; port):
 
-    var CustomServer = new Server(123.456.789.1, 12345, { auto_reconnect: true }, {});
-    app.use(xp.session({ store: new MongoStore({ server: CustomServer }) }));
+<pre><code>var CustomServer = new Server(123.456.789.1, 12345, { auto_reconnect: true }, {});
+app.use(xp.session({ store: new MongoStore({ server: CustomServer }) }));</code></pre>
 
 
 ## License
 
 Licensed under my standard BSD license.
 
-## Based on these classes
+### Based on these classes
 
-   [sencha]: https://github.com/senchalabs/connect/tree/master/lib/connect/middleware/session/memory.js (Sencha Connect Memory Store)
-   [ciaranj]: https://github.com/ciaranj/express-session-mongodb (ciaranj's express-session-mongodb)
+   [Sencha Connect Memory Store](https://github.com/senchalabs/connect/tree/master/lib/connect/middleware/session/memory.js)
+   [ciaranj's express-session-mongodb](https://github.com/ciaranj/express-session-mongodb)
