@@ -40,5 +40,5 @@ Licensed under my standard BSD license.
 
 ### Based on these classes
 
-   [Sencha Connect Memory Store](https://github.com/senchalabs/connect/tree/master/lib/connect/middleware/session/memory.js)
-   [ciaranj's express-session-mongodb](https://github.com/ciaranj/express-session-mongodb)
+* [Sencha Connect Memory Store](https://github.com/senchalabs/connect/tree/master/lib/connect/middleware/session/memory.js)
+* [ciaranj's express-session-mongodb](https://github.com/ciaranj/express-session-mongodb)
