@@ -1,0 +1,30 @@
+{
+    "name": "express-session-mongo",
+    "version": "0.0.1",
+    "description": "MongoDB Session Store for ExpressJS",
+    "author": "Dav Glass <davglass@gmail.com>",
+    "bugs": { "web" : "http://github.com/davglass/express-session-mongo/issues" },
+    "os": ["darwin", "linux"],
+    "engines": {
+        "node" : ">=0.2.0"
+    },
+    "directories": {
+        "lib" : "lib"
+    },
+    "main": "./lib/express-session-mongo",
+    "dependencies": {
+        "express": ">=1.0.0rc4",
+        "connect": ">=0.2.4",
+        "mongodb": ">=0.7.9"
+    },
+    "licenses":[
+        {
+            "type" : "BSD",
+            "url" : "http://github.com/davglass/express-session-mongo/blob/master/LICENSE"
+        }
+    ],
+    "repository": {
+        "type":"git",
+        "url":"http://github.com/davglass/express-session-mongo.git"
+    }
+}
