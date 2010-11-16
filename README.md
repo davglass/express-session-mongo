@@ -1,6 +1,6 @@
 # MongoDB Session Storage for Connect Middleware
 
-This module is an addon for Connect Middleware that adds a new Session Storage device.
+This module is an addon for [Connect Middleware](https://github.com/senchalabs/connect) that adds a new [Session Storage device][(https://github.com/senchalabs/connect/blob/master/docs/session.md).
 
 
 ## Install
