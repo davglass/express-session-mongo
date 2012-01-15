@@ -29,6 +29,7 @@ You can also pass several options to the constructor to tweak your session store
 * port - The Port to connect to, defaults to: `27017`
 * collection - The collection to save it's data to, defaults to: `sessions`
 * server - A custom mongo Server instance (this overides db, ip &amp; port):
+* dbopts - Options passed to mongodb.Db ctor (default is `{ native_parser: true }`)
 
 <pre><code>var CustomServer = new Server(123.456.789.1, 12345, { auto_reconnect: true }, {});
 app.use(xp.session({ store: new MongoStore({ server: CustomServer }) }));</code></pre>
