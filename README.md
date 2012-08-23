@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/davglass/express-session-mongo.png)](http://travis-ci.org/davglass/express-session-mongo)
 # MongoDB Session Storage for ExpressJS
 
 This module is an addon for ExpressJS that adds a new Session Storage device.
