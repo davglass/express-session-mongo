@@ -1,6 +1,6 @@
 {
     "name": "express-session-mongo",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "MongoDB Session Store for ExpressJS",
     "author": "Dav Glass <davglass@gmail.com>",
     "bugs": { "web" : "http://github.com/davglass/express-session-mongo/issues" },
