@@ -14,7 +14,6 @@
     "main": "./lib/express-session-mongo",
     "dependencies": {
         "express": ">=1.0.0rc4",
-        "connect": ">=0.2.4",
         "mongodb": ">=0.7.9"
     },
     "licenses":[

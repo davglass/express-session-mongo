@@ -2,10 +2,9 @@
 
 This module is an addon for ExpressJS that adds a new Session Storage device.
 
-
 ## Install
 
-    npm install express-session-mongo
+    npm install https://github.com/trottski/express-session-mongo/archive/master.tar.gz
 
 ## Usage
 
@@ -29,9 +28,26 @@ You can also pass several options to the constructor to tweak your session store
 * port - The Port to connect to, defaults to: `27017`
 * collection - The collection to save it's data to, defaults to: `sessions`
 * server - A custom mongo Server instance (this overides db, ip &amp; port):
+* fsync - Confirm writes after they have been flushed to disk, default: false.
+* native_parser - Use BSON native parser, defaults to: true.
 
 <pre><code>var CustomServer = new Server(123.456.789.1, 12345, { auto_reconnect: true }, {});
 app.use(xp.session({ store: new MongoStore({ server: CustomServer }) }));</code></pre>
+
+## Removing stale sessions
+
+MongoDB 2.2 and above supports doing this via an index, see http://docs.mongodb.org/manual/tutorial/expire-data/
+To enable this, run
+
+    db.sessions.ensureIndex( { "lastAccess": 1 }, { expireAfterSeconds: 3600 } )
+
+Mongo will now remove all sessions older than an hour (every 60 seconds).
+
+## Changes from davglass/express-session-mongo
+
+1. Removes connect as a dependency
+2. Adds fsync and native_parser options to constructor
+3. Removes manual session cleanup cleanup code (see Removing stale sessions below)
 
 
 ## License
