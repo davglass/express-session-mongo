@@ -4,7 +4,7 @@
     "description": "MongoDB Session Store for ExpressJS",
     "author": "Dav Glass <davglass@gmail.com>",
     "bugs": { "web" : "http://github.com/davglass/express-session-mongo/issues" },
-    "os": ["darwin", "linux"],
+    "os": ["darwin", "linux", "win32", "win64"],
     "engines": {
         "node" : ">=0.2.0"
     },
