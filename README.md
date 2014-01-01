@@ -23,7 +23,7 @@ The standard usage, is to just pass an instantiated `MongoStore` instance to the
 
 You can also pass several options to the constructor to tweak your session store:
 
-* db - The name of the db to use, defaults to: `express-sessions`
+* db - The name of the db to use, defaults to: `express-sessions` Or you can assign an existing mongo.Db instance
 * ip - The IP address of the server to connect to, defaults to: `127.0.0.1`
 * port - The Port to connect to, defaults to: `27017`
 * collection - The collection to save it's data to, defaults to: `sessions`
