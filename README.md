@@ -30,6 +30,9 @@ You can also pass several options to the constructor to tweak your session store
 * server - A custom mongo Server instance (this overides db, ip &amp; port):
 * fsync - Confirm writes after they have been flushed to disk, default: false.
 * native_parser - Use BSON native parser, defaults to: true.
+* username - The username for the database.
+* password - The password which corresponds to the database
+* authenciated - An err-first callback that fires once connected and an auth attempt is made.
 
 <pre><code>var CustomServer = new Server(123.456.789.1, 12345, { auto_reconnect: true }, {});
 app.use(xp.session({ store: new MongoStore({ server: CustomServer }) }));</code></pre>
